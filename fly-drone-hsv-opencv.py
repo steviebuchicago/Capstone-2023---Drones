@@ -13,10 +13,10 @@ height = 480  # HEIGHT OF THE IMAGE
 deadZone = 80
 ######################################################################
  
-startCounter = 1
+startCounter = 0
  
 # CONNECT TO TELLO
-me = Tello(host='192.168.86.21')
+me = Tello("192.168.87.38")
 me.connect()
 me.for_back_velocity = 0
 me.left_right_velocity = 0
@@ -49,18 +49,18 @@ def empty(a):
  
 cv2.namedWindow("HSV")
 cv2.resizeWindow("HSV",640,240)
-cv2.createTrackbar("HUE Min","HSV",112,152,empty)
-cv2.createTrackbar("HUE Max","HSV",152,152,empty)
-cv2.createTrackbar("SAT Min","HSV",158,255,empty)
-cv2.createTrackbar("SAT Max","HSV",215,255,empty)
-cv2.createTrackbar("VALUE Min","HSV",0,255,empty)
-cv2.createTrackbar("VALUE Max","HSV",158,255,empty)
+cv2.createTrackbar("HUE Min","HSV",35,152,empty)
+cv2.createTrackbar("HUE Max","HSV",157,152,empty)
+cv2.createTrackbar("SAT Min","HSV",94,255,empty)
+cv2.createTrackbar("SAT Max","HSV",253,255,empty)
+cv2.createTrackbar("VALUE Min","HSV",52,255,empty)
+cv2.createTrackbar("VALUE Max","HSV",255,242,empty)
  
 cv2.namedWindow("Parameters")
 cv2.resizeWindow("Parameters",640,240)
 cv2.createTrackbar("Threshold1","Parameters",24,255,empty)
 cv2.createTrackbar("Threshold2","Parameters",186,255,empty)
-cv2.createTrackbar("Area","Parameters",1110,30000,empty)
+cv2.createTrackbar("Area","Parameters",610,30000,empty)
  
  
 def stackImages(scale,imgArray):

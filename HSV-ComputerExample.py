@@ -24,7 +24,7 @@ cv2.createTrackbar("V_min", "Trackbars", 0, 255, on_trackbar)
 cv2.createTrackbar("V_max", "Trackbars", 255, 255, on_trackbar)
 
 # Open the default camera
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 
 while True:
     # Read the frame from the camera

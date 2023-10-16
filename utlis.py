@@ -233,7 +233,7 @@ def fly_drones(ip1, ip2):
         land2 = executor.submit(drone2.land)
  
 def initializeTello():
-    myDrone = Tello('192.168.86.34')
+    myDrone = Tello()
     myDrone.connect()
     myDrone.for_back_velocity = 0
     myDrone. left_right_velocity = 0

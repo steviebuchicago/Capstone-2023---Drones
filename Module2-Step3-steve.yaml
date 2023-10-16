@@ -1,0 +1,15 @@
+# steve.yaml
+
+# Parameters
+nc: 1  # Number of classes
+names: ['Steve Barry']  # Class names
+
+# Paths for training and validation datasets
+train: ./steve/images/train/
+val: ./steve/images/val
+
+# train: C:/Users/sbarr/Downloads/Summer-Drone-Capstone/Capstone-2023---Drones/yolov5/steve/images/train/
+# val: C:/Users/sbarr/Downloads/Summer-Drone-Capstone/Capstone-2023---Drones/yolov5/steve/images/train/
+
+# Number of channels, for RGB images it's 3
+channels: 3

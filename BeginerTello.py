@@ -10,7 +10,7 @@ import time
 
 def main():
     # Initialize the Tello drone
-    tello = Tello()
+    tello = Tello('192.168.86.27')
 
     # Connect to the drone
     print("Connecting to drone...")
@@ -27,13 +27,13 @@ def main():
 
     # Fly forward
     print("Flying forward...")
-    tello.move_forward(100)
+    tello.move_forward(10)
     time.sleep(5)
 
 
     # Fly forward
     print("Flying forward...")
-    tello.move_up(100)
+    tello.move_up(10)
 
     # Fly forward
     print("Flying forward...")
@@ -42,7 +42,7 @@ def main():
 
     # Fly forward
     print("Flying forward...")
-    tello.move_forward(100)
+    tello.move_forward(10)
     time.sleep(5)
 
 

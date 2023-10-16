@@ -9,4 +9,4 @@ startCounter = 0  # for no Flight 1   - for flight 0
 #fly_drones_voice_3('192.168.86.25', '192.168.86.24')
 #fly_drones_voice_2('192.168.86.25', '192.168.86.24')
 #fly_drones('192.168.86.25', '192.168.86.24')
-fly_drones_voice_3('192.168.86.24', '192.168.86.34')
+fly_drones_voice_3('172.20.10.3','172.20.10.2')

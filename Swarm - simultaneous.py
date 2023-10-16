@@ -9,10 +9,10 @@ from djitellopy import Tello
 import threading
 
 # Connect to the first drone
-drone1 = Tello('192.168.86.33')
+drone1 = Tello('192.168.87.48')
 
 # Connect to the second drone
-drone2 = Tello('192.168.86.34')
+drone2 = Tello('172.20.10.2','172.20.10.3')
 
 #Connect both drones
 drone1.connect()
@@ -55,8 +55,8 @@ thread1.join()
 thread2.join()
 
 # Create a thread for each drone's takeoff
-thread1 = threading.Thread(target=drone1.flip_forward())
-thread2 = threading.Thread(target=drone2.flip_forward())
+#thread1 = threading.Thread(target=drone1.flip_forward())
+#thread2 = threading.Thread(target=drone2.flip_forward())
 
 # Start both threads
 thread1.start()

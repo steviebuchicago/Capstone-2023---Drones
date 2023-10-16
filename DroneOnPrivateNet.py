@@ -9,6 +9,7 @@ from djitellopy import Tello
 
 # Connect to the drone
 drone = Tello()
+
 drone.connect()
 
 # Connect to your home WiFi
